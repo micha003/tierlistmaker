@@ -1,67 +1,50 @@
 ---
+import Layout from "../layouts/layout.astro";
 ---
 
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Tier List Maker</title>
+<Layout>
 
-        <!-- Google Fonts -  I am sorry :( -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Tier List Maker</h1>
+    <h1>Tier List Maker</h1>
 
-        <p class="info-text">
-            This is a <i>hopefully</i> fancy Tier List Maker :)
-        </p>
+    <p class="info-text">
+        This is a <i>hopefully</i> fancy Tier List Maker :)
+    </p>
+    
+    <a href="/tierlistmaker">
+    <button>
+        Make a Tier List
+    </button>
+    </a>
 
-        <button>
-            Make a Tier List
-        </button>
-    </body>
-</html>
-
-<style>
-    hmtl, body {
-        margin: 0;
-        height: 100vh;
-        overflow: hidden;
+    <style>
+        h1 {
+            color: #2668cb;
+            font-weight: 450;
+            font-size: 450%;
+            margin: 5%;
+        }
         
-        background: linear-gradient(to bottom, black 0%, black 20%, #0f346c 95%, #0f346c 100%);
-
-        font-family: "Kanit";
-        text-align: center;
-    }
-
-    h1 {
-        color: #2668cb;
-        font-weight: 450;
-        font-size: 450%;
-        margin: 5%;
-    }
-
-    .info-text {
+        .info-text {
         color: white;
-    }
+        }
 
-    button {
-        padding: 1% 5%;
-        border-radius: 15%;
-        cursor: pointer;
-        border: none;
-        border-radius: 25px;
+        button {
+            padding: 1% 5%;
+            border-radius: 15%;
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
 
-        margin-top: 5%;
+            margin-top: 5%;
 
-        background: #2668cb;
+            color: #cdcdcd;
+            background: linear-gradient(to right,#2668cb, #0f346c);
 
-        font-family: "Kanit";
-    }
+            font-family: "Kanit";
+        }
 
-    button:hover {
-        background: linear-gradient(to right, #f19ce3 0% 10%, #dd53af 40% 100%);
-    }
-</style>
+        button:hover {
+            background: linear-gradient(to right, #f19ce3 0% 10%, #dd53af 40% 100%);
+        }
+    </style>
+</Layout>
