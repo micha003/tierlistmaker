@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<a href='/tierlistmaker'>Hello, World!</p>"
 
-@app.route("/tierlist")
-def app():
-    return
+@app.route("/tierlistmaker")
+def tierlistmaker():
+    return "<h1>Tierlistmaker</h1>"
