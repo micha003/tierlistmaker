@@ -14,7 +14,13 @@
     <body>
         <h1>Tier List Maker</h1>
 
-        <hr>
+        <p class="info-text">
+            This is a <i>hopefully</i> fancy Tier List Maker :)
+        </p>
+
+        <button>
+            Make a Tier List
+        </button>
     </body>
 </html>
 
@@ -22,22 +28,40 @@
     hmtl, body {
         margin: 0;
         height: 100vh;
+        overflow: hidden;
+        
         background: linear-gradient(to bottom, black 0%, black 20%, #0f346c 95%, #0f346c 100%);
+
+        font-family: "Kanit";
+        text-align: center;
     }
 
     h1 {
-        text-align: center;
         color: #2668cb;
-
-        font-family: "Kanit";
         font-weight: 450;
-        font-size: 300%;
+        font-size: 450%;
+        margin: 5%;
     }
 
-    hr {
-        width: 80%
-        height: 2px;
-        background-color: blue;
+    .info-text {
+        color: white;
+    }
+
+    button {
+        padding: 1% 5%;
+        border-radius: 15%;
+        cursor: pointer;
         border: none;
+        border-radius: 25px;
+
+        margin-top: 5%;
+
+        background: #2668cb;
+
+        font-family: "Kanit";
+    }
+
+    button:hover {
+        background: linear-gradient(to right, #f19ce3 0% 10%, #dd53af 40% 100%);
     }
 </style>
