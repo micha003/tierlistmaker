@@ -3,28 +3,46 @@
 
 <table>
     <tr>
-        <td></td>
-        <td></td>
+        <td class="label"><slot name="STier-Label"/>S</td>
+        <td class="field"><slot name="STier-Field"/></td>
         <!--<td></td>   for additional column (settings)-->
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td class="label"><slot name="ATier-Label"/>A</td>
+        <td class="field"><slot name="ATier-Field"/></td>
         <!--<td></td>   for additional column (settings)-->
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td class="label"><slot name="BTier-Label"/>B</td>
+        <td class="field"><slot name="BTier-Field"/></td>
         <!--<td></td>   for additional column (settings)-->
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td class="label"><slot name="CTier-Label"/>C</td>
+        <td class="field"><slot name="CTier-Field"/></td>
         <!--<td></td>   for additional column (settings)-->
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <td class="label"><slot name="DTier-Label"/>D</td>
+        <td class="field"><slot name="DTier-Field"/></td>
         <!--<td></td>   for additional column (settings)-->
     </tr>
 </table>
+
+<style>
+    table {
+        border: 2px solid white;
+        width: 90%;
+        color: white;
+        margin: 5%;
+    }
+
+    .label {
+        width: 20%;
+        height: 20%;
+    }
+
+    .field {
+        width: 80%;
+    }
+</style>
