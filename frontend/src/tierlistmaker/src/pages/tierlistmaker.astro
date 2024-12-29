@@ -1,15 +1,16 @@
 ---
 import Layout from "../layouts/layout.astro";
 import Table from "../components/tierlist_table.astro";
+import FileUpload from "../components/file_upload.astro";
 ---
 
 <Layout>
-    <h1>
-        Tier List Maker
-    </h1>
+    <h1>Tier List Maker</h1>
 
-    <Table> </Table>
-    
+    <Table />
+
+    <FileUpload />
+
     <style>
         h1 {
             color: #2668cb;
@@ -19,5 +20,3 @@ import Table from "../components/tierlist_table.astro";
         }
     </style>
 </Layout>
-
-
