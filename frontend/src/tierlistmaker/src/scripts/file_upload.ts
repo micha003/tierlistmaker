@@ -7,6 +7,9 @@ function appendPicture(picture: File) {
         imgElement.src = URL.createObjectURL(picture);
         imgElement.className = "pictureBarIMG"
 
+        imgElement.style.width = "145px";
+        imgElement.style.height = "145px";
+
         pictureBar.appendChild(imgElement);
     } else {
         console.error("Element not found.");
