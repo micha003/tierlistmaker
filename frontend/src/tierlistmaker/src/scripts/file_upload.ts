@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 fileNameDisplay.textContent = fileName;
                 appendPicture(input.files[0]);
             } else {
-                fileNameDisplay.textContent = "Keine Datei ausgewählt";
+                fileNameDisplay.textContent = "No file chosen";
             }
         });
     } else {
